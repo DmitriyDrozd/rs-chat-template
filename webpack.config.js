@@ -32,7 +32,6 @@ const devPlugins = [
     }),
 ];
 
-
 module.exports = {
     entry: {
         'application': './client/index.js',
