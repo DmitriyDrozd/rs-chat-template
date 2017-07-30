@@ -1,0 +1,27 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client:watch": "cross-env NODE_ENV=development webpack --watch",
+    "client:build": "cross-env NODE_ENV=production webpack",
+    "server": "cross-env NODE_PATH=./server/ NODE_ENV=production nodemon ./server/index.js",
+    "server:dev": "cross-env NODE_PATH=./server/ NODE_ENV=development nodemon --watch ./server ./server/index.js",
+    "server:inspect": "cross-env NODE_PATH=./server/ NODE_ENV=development nodemon --watch ./server --inspect ./server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humanamburu/chat.git"
+  },
+  "author": "humanamburu",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^5.0.1",
+    "css-loader": "^0.28.4",
+    "nodemon": "^1.11.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.4.1",
+    "webpack-notifier": "^1.5.0"
+  }
+}
