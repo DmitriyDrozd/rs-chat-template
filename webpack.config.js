@@ -55,6 +55,6 @@ module.exports = {
             },
         ]
     },
-    devtool: isProduction ? '' : 'eval',
+    devtool: isProduction ? '' : 'source-map',
     plugins: isProduction ? productionPlugins.concat(devPlugins) : devPlugins,
 };
